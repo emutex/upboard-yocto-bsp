@@ -20,11 +20,17 @@ $: repo sync
 
 At the end of the commands you have every metadata you need to start work with.
 
-To start a simple image build:
+To start a simple image build from the source directory:
 
 [source,console]
-$: source ./setup-environment build
+$: TEMPLATECONF=meta-up-board/conf source oe-init-build-env
 $: bitbake core-image-minimal
+
+To build a full image type from the source directory:
+
+[source,console]
+$: TEMPLATECONF=meta-up-board/conf source oe-init-build-env
+$: bitbake upboard-image-sato
 
 You can use any directory to host your build.
 
