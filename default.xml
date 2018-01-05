@@ -7,13 +7,13 @@
   <remote fetch="https://github.com/emutex"        name="emutex"/>
   <remote fetch="https://github.com/openembedded"  name="oe"/>
 
-  <project remote="yocto" name="poky"       path="sources/poky"/>
-  <project remote="yocto" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" name="poky"       path="."/>
+  <project remote="yocto" name="meta-intel" path="./meta-intel"/>
 
-  <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" name="meta-openembedded" path="./meta-openembedded"/>
 
-  <project remote="emutex" name="meta-up-board" path="sources/meta-up-board">
-	<linkfile dest="README" src="README"/>
+  <project remote="emutex" name="meta-up-board" path="./meta-up-board">
+	  <linkfile dest="README.upboard" src="README"/>
   </project>
 
 </manifest>
